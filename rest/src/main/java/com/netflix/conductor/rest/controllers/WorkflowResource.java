@@ -73,6 +73,8 @@ public class WorkflowResource {
             @RequestParam(value = "correlationId", required = false) String correlationId,
             @RequestParam(value = "priority", defaultValue = "0", required = false) int priority,
             @RequestBody Map<String, Object> input) {
+        String podName = System.getenv("HOSTNAME");
+        System.out.println("In WorkflowResource, HOSTNAME = " + podName);
         return workflowService.startWorkflow(name, version, correlationId, priority, input);
     }
 
