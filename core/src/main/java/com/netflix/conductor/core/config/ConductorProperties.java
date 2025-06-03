@@ -174,7 +174,7 @@ public class ConductorProperties {
      * rejected and the workflow will be marked as FAILED.
      */
     @DataSizeUnit(DataUnit.KILOBYTES)
-    private DataSize maxWorkflowInputPayloadSizeThreshold = DataSize.ofKilobytes(10240L);
+    private DataSize maxWorkflowInputPayloadSizeThreshold = DataSize.ofKilobytes(25600L);
 
     /**
      * The threshold of the workflow output payload size in KB beyond which the payload will be
@@ -188,7 +188,7 @@ public class ConductorProperties {
      * rejected and the workflow will be marked as FAILED.
      */
     @DataSizeUnit(DataUnit.KILOBYTES)
-    private DataSize maxWorkflowOutputPayloadSizeThreshold = DataSize.ofKilobytes(10240L);
+    private DataSize maxWorkflowOutputPayloadSizeThreshold = DataSize.ofKilobytes(25600L);
 
     /**
      * The threshold of the task input payload size in KB beyond which the payload will be stored in
@@ -202,7 +202,7 @@ public class ConductorProperties {
      * be rejected and the task will be marked as FAILED_WITH_TERMINAL_ERROR.
      */
     @DataSizeUnit(DataUnit.KILOBYTES)
-    private DataSize maxTaskInputPayloadSizeThreshold = DataSize.ofKilobytes(10240L);
+    private DataSize maxTaskInputPayloadSizeThreshold = DataSize.ofKilobytes(25600L);
 
     /**
      * The threshold of the task output payload size in KB beyond which the payload will be stored
@@ -216,7 +216,7 @@ public class ConductorProperties {
      * be rejected and the task will be marked as FAILED_WITH_TERMINAL_ERROR.
      */
     @DataSizeUnit(DataUnit.KILOBYTES)
-    private DataSize maxTaskOutputPayloadSizeThreshold = DataSize.ofKilobytes(10240L);
+    private DataSize maxTaskOutputPayloadSizeThreshold = DataSize.ofKilobytes(25600L);
 
     /**
      * The maximum threshold of the workflow variables payload size in KB beyond which the task
